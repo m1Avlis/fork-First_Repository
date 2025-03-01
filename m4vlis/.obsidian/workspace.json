@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GitHub.md",
-                "mode": "source",
+                "file": "GIT.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitHub"
+              "title": "GIT"
             }
           }
         ]
