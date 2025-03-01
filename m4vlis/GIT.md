@@ -1,4 +1,4 @@
-##### Git é uma sistema de versionamento de diretórios, tornando possível criar, clonar, editar e excluir arquivos e pastas, em um ecossistema que permite acompanhar e controlar cada ação.
+#### Git é uma sistema de versionamento de diretórios, tornando possível criar, clonar, editar e excluir arquivos e pastas, em um ecossistema que permite acompanhar e controlar cada ação.
 
 Esses são alguns comandos iniciais e básicos do Git:
 
