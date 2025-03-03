@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GIT.md",
-                "mode": "preview",
+                "file": "Faculdade/Lógica de Programação e Algorítimos/Arquitetura de Von Neumann.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GIT"
+              "title": "Arquitetura de Von Neumann"
             }
           }
         ]
@@ -184,9 +184,22 @@
   },
   "active": "ffd4c1b0b31a290a",
   "lastOpenFiles": [
-    "GitHub.md",
-    "GIT.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Bit, Byte e Palavra.md",
     "Sem título.canvas",
+    "Faculdade/Lógica de Programação e Algorítimos/Compiladores vs. Interpretadores.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Python.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Linguagens de Programação.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Sistemas Operacionais.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Arquitetura de Von Neumann.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Introdução à Lógica e Algoritmos.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Pseudocódigo.md",
+    "Algoritmos.md",
+    "Fórmula de Bhaskara.md",
+    "Sem título.md",
+    "Faculdade/Lógica de Programação e Algorítimos",
+    "Faculdade",
+    "GIT.md",
+    "GitHub.md",
     "2025-03-01.md",
     "Sem título 1.canvas",
     "GIT - GITHUB/GIT.md",
