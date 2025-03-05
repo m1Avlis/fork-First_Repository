@@ -1,3 +1,4 @@
+# ESTRUTURAS DE REPETIÇÃO
 """
 x = 1
 while x <= 5:
@@ -63,4 +64,16 @@ while True:
 	if senha ==  'UnInTer':
 		break
 print('Acesso concedido')
+"""
+
+# Exercício tabuada - Estruturas de repetição aninhadas
+"""
+num = 1
+while num <= 10:
+	print(f'Tábuada do {num}:')
+	print("") # Apenas para adicionar uma linha de espaço.
+	for i in range(1,11):
+		print(f'{num}x{i}={num*i}')
+	num += 1
+	print("") # Apenas para adicionar uma linha de espaço.
 """
