@@ -16,10 +16,9 @@ while x <= 5:
 
 Explicando a estrutura:
 
-while     x       <=        5      :
-  ^       ^        ^        ^      ^
-função iterador operador condição Os dois pontos marcam o fim do while.
-
+| while  |    x     |    <=    |    5     |        :         |
+| :----: | :------: | :------: | :------: | :--------------: |
+| função | iterador | operador | condição | fim da estrutura |
 
 O iterador mencionado acima, também é conhecido como variável de controle. São elas que vão carregar o valor para atender a condição.
 
@@ -172,3 +171,74 @@ else:
 Note que, no exemplo acima, a variável 'nome' começa vazia, e dentro do while  ela seria lida como *falsey*, e pularia a estrutura de repetição, por isso o 'not' transforma a variável em *truthy* (verdadeira), fazendo o loop da estrutura de repetição. Dessa maneira, a condição só é atendida quando o usuário digita alguma coisa. 
 
 Da mesma forma, no if não é explicitada nenhuma condição, apenas a variável valor, que contém o número digitado pelo usuário. Como o zero é lido como falso pelo python, o if só será atendido quando o usuário digitar uma valor maior do que zero.
+
+# FOR (Para)
+
+O **For** é mais uma estrutura de repetição disponível no Python, da mesma maneira que o **while**, executará um determinado comando enquanto uma condição for atendida.
+
+Sua principal diferença do **while**, é que geralmente é utilizado quando se tem em mente quantas vezes o loop deverá ser executado.
+
+Estrutura do **For**
+
+```python
+for i in range(6):
+	print(i)
+
+```
+
+Explicando a estrutura:
+
+|  for   |    i     |    in    |   range   |      (      |        6        |      )      |  :  |
+| :----: | :------: | :------: | :-------: | :---------: | :-------------: | :---------: | :-: |
+| função | iterador | operador | intervalo | obrigatório | Num. repetições | obrigatório | Fim |
+
+É possível na estrutura do for, escolher por onde ele vai começar a execução, até onde ele vai executar e o passo da execução. Todas essas seleções são passadas dentro dos parêntesis.
+
+|  (  |       0        |          6          |       1       |  )  |
+| :-: | :------------: | :-----------------: | :-----------: | :-: |
+|     | Número inicial | Quantidade de loops | Passo do loop |     |
+Onde:
+
+	Número Inical: É o número que irá inicar a contagem.
+	Quantidade de Loops: É até quando o loop será executado.
+	Passo do Loop: É de quantos em quantos números deve ser executado. Poderia ser por exemplo de 2 em 2, ou mais.
+
+
+### Varredura de Strings
+
+O **for** é uma ótima ferramenta para fazer varredura de strings, sendo possível ler e executar outras funções a partir do seu resultado.
+
+Exemplo:
+```python
+frase = 'Lógica de Programação e Algorítmos'
+for i in range(0, len{frase}, 1):
+	print(frase[i], end="")
+
+```
+
+Nesse exemplo, o **for** é utilizado para passar por cada carácter contido na variável frase, e printar na tela cada string.
+
+Utilizando o for para calcular a média dos pares dos número de 1 a 100:
+```python
+soma = 0
+qtd = 0
+for i in range(1,100)
+	if i % 2 == 0:
+		soma += i
+		qtd += i
+media = soma / qtd
+print(f'A média dos pares de 1 até 100 é: {media}')
+
+```
+
+Exemplo de estruturas de repetição aninhadas:
+```python
+num = 1
+while num <= 10:
+	print(f'Tábuada do {num}:')
+	print("") # Apenas para adicionar uma linha de espaço.
+	for i in range(1,11):
+		print(f'{num}x{i}={num*i}')
+	num += 1
+	print("") # Apenas para adicionar uma linha de espaço.
+```
