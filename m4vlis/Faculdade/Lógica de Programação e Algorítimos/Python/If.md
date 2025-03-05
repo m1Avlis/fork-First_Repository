@@ -11,17 +11,20 @@ Abrimos a função digitando IF em letras minúscula, em seguida o parêntesis �
 
 #### Operadores
 
-| >     | Maior          |
-| ----- | -------------- |
-| <     | Menor          |
-| >=    | Maior ou Igual |
-| <=    | Menor ou Igual |
-| ==    | Igual          |
-| !=    | Diferente      |
-| and   | e              |
-| or    | ou             |
-| True  | Verdadeiro     |
-| False | Falso          |
+| >     | Maior                          |
+| ----- | ------------------------------ |
+| <     | Menor                          |
+| >=    | Maior ou Igual                 |
+| <=    | Menor ou Igual                 |
+| ==    | Igual                          |
+| !=    | Diferente                      |
+| //    | Divisão(somente parte inteira) |
+| %     | Resto da divisão               |
+| **    | Exponenciação ou potenciação   |
+| and   | e                              |
+| or    | ou                             |
+| True  | Verdadeiro                     |
+| False | Falso                          |
 
 Ao final no IF, após a condição é obrigatório encerrar com dois ponto (:). Podemos observar na demonstração da estrutura que a linha abaixo da instrução do IF está endentada (tabulada), essa é mais uma obrigatoriedade da função, tudo que está dentro da endentação deverá ser executado caso a condição for atendida.
 
