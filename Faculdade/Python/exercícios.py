@@ -64,7 +64,7 @@ else:
 print(primo)
 """
 #Gabarito exercício 4
-
+"""
 def primo(n):
     if n <= 1:
         return False
@@ -78,18 +78,42 @@ def primo(n):
     return True
 n = int(input('Digite o número que deseja verificar: '))
 print(primo(n))
+"""
 
-
-# Crie um função que receba uma string e retorne o número de vogais prensentes nela.
+# Exercício 5 - Crie um função que receba uma string e retorne o número de vogais prensentes nela.
 # Não consegui resolver
 """
-s = input('Digite o que quiser: ')
-
-for i in range(1,len(s)):
-    if i == 'a':
-        v = 1
-    v += i
-print(f'Essa string tem {v} vogais.')
+vogais = 'aeiouAEIOU'
+contador = 0
+texto = input('Digite um texto qualquer: ')
+for letra in texto:
+    if letra in vogais:
+        contador += 1
+print(contador)
+"""
+# Gabarito exercício 5
+"""
+def contar_vogais(texto):
+    vogais = "aeiouAEIOU"
+    contador = 0
+    for letra in texto:
+        if letra in vogais:
+            contador += 1
+    return contador
+"""
+#Exercício 6 - Crie uma tábuada
+"""
+n = int(input('Digite um número: '))
+c = 1
+while c <= 10:
+    print(f'{c}x{n}={c*n}')
+    c+= 1
+"""
+# Gabarito exercício 6
+"""
+def tabuada(n):
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
 """
 
 #Exercício 7
@@ -102,15 +126,36 @@ for i in range(1,101,):
     elif i % 3 == 0 and i % 5 == 0:
         print(f'{i} FizzBuzz')
 """
-
-#Exercício 8 
-# Não consegui resolver
+#Gabarito exercício 7
 """
-n = int(input('Digite um número: '))
-
-if n > 1:
-    print(n[0]+n[1])
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
 """
+#Exercício 8 - Somar digitos de números
+"""
+n = int(input('Digite um número maior do que 10: '))
+soma = 0
+while n < 10:
+    n = int(input('Digite um número maior do que 10: '))
+while n > 0:
+    soma += n % 10
+    n = n // 10
+print(soma)
+"""
+#Gabarito exercício 8
+
+#Exercício 9 - Verificar se uma string é um palíndromo
+texto = input('Digite um texto qualquer: ')
+
+texto = texto.lower().replace(" ", "")
+print(texto == texto[::-1])
 
 # Exercício 10
 """
@@ -128,4 +173,22 @@ while num != n:
         num = int(input('Digite um número de 1 a 100: '))
     t = t + 1
 print(f'Você acertou! Precisou de {t} tentativas.')
+"""
+#Gabarito exercício 10
+"""
+import random
+
+def jogo_adivinhacao():
+    numero_secreto = random.randint(1, 100)
+    tentativas = 0
+    while True:
+        palpite = int(input("Digite um número entre 1 e 100: "))
+        tentativas += 1
+        if palpite < numero_secreto:
+            print("Tente um número maior.")
+        elif palpite > numero_secreto:
+            print("Tente um número menor.")
+        else:
+            print(f"Parabéns! Você acertou em {tentativas} tentativas.")
+            break
 """
