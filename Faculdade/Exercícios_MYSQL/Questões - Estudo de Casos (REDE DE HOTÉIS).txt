@@ -1,0 +1,35 @@
+# QUESTÕES ESTUDO DE CASOS HOTEL
+
+Exercícios de Nível Básico
+1. Seleção de dados simples
+
+Escreva uma consulta para listar todos os funcionários de um hotel, incluindo CPF, nome e telefone.
+2. Listar informações de um hotel
+
+Escreva uma consulta para listar o nome, categoria, telefone e e-mail de um hotel específico. O hotel deve ser identificado pelo seu nome.
+3. Listar quartos disponíveis
+
+Escreva uma consulta para listar todos os quartos disponíveis (status = 'disponível'), incluindo número de leitos, tipo e preço da diária.
+Exercícios de Nível Intermediário
+4. Buscar reservas por hóspede
+
+Escreva uma consulta para listar todas as reservas de um hóspede, incluindo a identificação da reserva, data de entrada, data de saída e o status da reserva. O hóspede será identificado pelo CPF.
+5. Consultar pagamentos pendentes
+
+Escreva uma consulta para listar todos os pagamentos pendentes, incluindo a identificação do pagamento, valor total, data e a forma de pagamento.
+6. Reservas de um quarto específico
+
+Escreva uma consulta para listar todas as reservas que envolvem um quarto específico (identificado pelo ID do quarto), incluindo as datas de entrada e saída.
+Exercícios de Nível Avançado
+7. Relatório de ocupação por hotel
+
+Escreva uma consulta para listar a quantidade de quartos disponíveis, ocupados e em manutenção em cada hotel. O resultado deve incluir o nome do hotel e a quantidade de quartos em cada status.
+8. Consulta de total de pagamentos por hóspede
+
+Escreva uma consulta para calcular o total de pagamentos realizados por um hóspede, incluindo o CPF do hóspede, o valor total e a forma de pagamento.
+9. Lista de funcionários que não realizaram reservas
+
+Escreva uma consulta para listar os funcionários que não realizaram nenhuma reserva, incluindo o nome e o CPF do funcionário.
+10. Relatório de pagamentos por forma de pagamento
+
+Escreva uma consulta para listar o total de pagamentos realizados, agrupados por forma de pagamento (cartão, pix, dinheiro). O relatório deve incluir a forma de pagamento e o valor total de cada tipo.
