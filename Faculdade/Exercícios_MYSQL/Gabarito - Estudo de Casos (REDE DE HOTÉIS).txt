@@ -1,0 +1,68 @@
+Gabarito
+1. Seleção de dados simples
+
+SELECT cpf, nome, telefone FROM funcionario;
+
+2. Listar informações de um hotel
+
+SELECT nome, categoria, telefone, email
+FROM hotel
+WHERE nome = 'Nome do Hotel';
+
+3. Listar quartos disponíveis
+
+SELECT numero_leitos, tipo, preco_diaria
+FROM quarto
+WHERE status = 'disponível';
+
+4. Buscar reservas por hóspede
+
+SELECT r.id_reserva, r.data_entrada, r.data_saida, r.status
+FROM reserva r
+JOIN hospede h ON r.id_hospede = h.id_hospede
+WHERE h.cpf = '12345678901';
+
+5. Consultar pagamentos pendentes
+
+SELECT id_pagamento, valor_total, data_pagamento, forma_pagamento
+FROM pagamento
+WHERE status = 'pendente';
+
+6. Reservas de um quarto específico
+
+SELECT r.id_reserva, r.data_entrada, r.data_saida
+FROM reserva r
+JOIN reserva_quarto rq ON r.id_reserva = rq.id_reserva
+WHERE rq.id_quarto = 101;
+
+7. Relatório de ocupação por hotel
+
+SELECT h.nome, 
+       SUM(CASE WHEN q.status = 'disponível' THEN 1 ELSE 0 END) AS quartos_disponiveis,
+       SUM(CASE WHEN q.status = 'ocupado' THEN 1 ELSE 0 END) AS quartos_ocupados,
+       SUM(CASE WHEN q.status = 'manutenção' THEN 1 ELSE 0 END) AS quartos_em_manutencao
+FROM hotel h
+JOIN quarto q ON h.id_hotel = q.id_hotel
+GROUP BY h.nome;
+
+8. Consulta de total de pagamentos por hóspede
+
+SELECT h.cpf, SUM(p.valor_total) AS total_pago, p.forma_pagamento
+FROM pagamento p
+JOIN reserva r ON p.id_reserva = r.id_reserva
+JOIN hospede h ON r.id_hospede = h.id_hospede
+GROUP BY h.cpf, p.forma_pagamento;
+
+9. Lista de funcionários que não realizaram reservas
+
+SELECT f.nome, f.cpf
+FROM funcionario f
+LEFT JOIN reserva r ON f.id_funcionario = r.id_funcionario
+WHERE r.id_reserva IS NULL;
+
+10. Relatório de pagamentos por forma de pagamento
+
+SELECT forma_pagamento, SUM(valor_total) AS total_pago
+FROM pagamento
+GROUP BY forma_pagamento;
+
