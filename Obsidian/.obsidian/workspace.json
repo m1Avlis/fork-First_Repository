@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matemática/Números Primos.md",
+                "file": "Faculdade/Lógica de Programação e Algorítimos/Python/Funções.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Números Primos"
+              "title": "Funções"
             }
           }
         ],
@@ -213,6 +213,14 @@
   },
   "active": "49c0884db0ab4445",
   "lastOpenFiles": [
+    "Sem título.canvas",
+    "Faculdade/Lógica de Programação e Algorítimos/Python/Funções.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Python/Dicionários.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Python/Tuplas.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Python/Estruturas de Repetição.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Python/Python.md",
+    "Faculdade/Lógica de Programação e Algorítimos/Python/Listas.md",
+    "Matemática/Números Primos.md",
     "Matemática/Fatorial.md",
     "Faculdade/Lógica de Programação e Algorítimos/Pseudocódigo.md",
     "Faculdade/Lógica de Programação e Algorítimos/Linguagens de Programação.md",
@@ -220,11 +228,8 @@
     "Faculdade/Lógica de Programação e Algorítimos/Compiladores vs. Interpretadores.md",
     "Faculdade/Lógica de Programação e Algorítimos/Arquitetura de Von Neumann.md",
     "Faculdade/Lógica de Programação e Algorítimos/Python/If.md",
-    "Faculdade/Lógica de Programação e Algorítimos/Python/Estruturas de Repetição.md",
-    "Faculdade/Lógica de Programação e Algorítimos/Python/Python.md",
     "Faculdade/Banco de Dados/Select.md",
     "Faculdade/Trabalhos/Banco de Dados.md",
-    "Matemática/Números Primos.md",
     "GIT.md",
     "GitHub.md",
     "APARÊNCIA OBSIDIAN.md",
@@ -232,7 +237,6 @@
     "Operadores.md",
     "Python.md",
     "Faculdade/Lógica de Programação e Algorítimos/Python",
-    "Sem título.canvas",
     "Faculdade/Banco de Dados",
     "Algoritmos.md",
     "Fórmula de Bhaskara.md",
@@ -241,8 +245,6 @@
     "2025-03-01.md",
     "Sem título 1.canvas",
     "GIT - GITHUB/GIT.md",
-    "GIT_GITHUB.md",
-    "GIT - GITHUB",
-    "Bem-vindo.md"
+    "GIT - GITHUB"
   ]
 }
