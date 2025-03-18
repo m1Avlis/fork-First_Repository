@@ -15,7 +15,7 @@ else:
     vl_desconto = vl_total 
 
 print(f'O valor sem desconto foi de R${vl_total}.')
-print(f'O valor com desconto foi de R${vl_desconto}')"""
+print(f'O valor com desconto foi de R${vl_desconto}')
 
 # Questão 2:
 
@@ -162,16 +162,96 @@ servico_extra()
 
 total = (servico * pagina) + extra
 print(f'Valor Total: R$ {total:.2f}')
-
-
+"""
 
 # Questão 4
-# %%
 
-print('Olá! Seja bem vindo a Livraria do Mario Pereira.')
-print('-'*46)
-print('-'*15 + ' MENU PRINCIPAL ' +'-'*15)
 
 lista_livro = []
 id_global = 0
 
+# Cadastra um livro.
+def cadastrar_livro():
+    global id_global
+    id_global += 1
+    print('-'*46)
+    print('-'*11 + ' MENU CADASTRAR LIVRO ' +'-'*11)
+    nome = input('Digite o nome do livro: ')
+    autor = input('Digite o autor do livro: ')
+    editora = input('Digite a editora do livro: ')
+    livro = {'id': id_global, 'nome': nome, 'autor': autor, 'editora': editora}
+    lista_livro.append(livro)
+    print('Livro cadastrado com sucesso!')
+
+# Consulta um livro.
+def consultar_livro():
+    try:
+        print('1 - Consultar todos\n'
+              '2 - Consultar por ID\n'
+              '3 - Consultar por Autor\n'
+              '4 - Retornar ao menu principal')
+        menu_consulta = int(input('Escolha uma opção: '))
+        while True:
+            if menu_consulta == 1:
+                print(lista_livro)
+                break
+            elif menu_consulta == 2:
+                id_consulta = int(input('Digite o ID do livro: '))
+                for i in lista_livro:
+                    if i['id'] == id_consulta:
+                        print(i)
+                        break
+            elif menu_consulta == 3:
+                autor_consulta = input('Digite o autor do livro: ')
+                for i in lista_livro:
+                    if i['autor'] == autor_consulta:
+                        print(i)
+                        break
+            elif menu_consulta == 4:
+                menu()
+                break
+    except ValueError: #Tratamento de erros, caso o usuário insira um valor diferente de número inteiro.
+        print('Opção inválida, tente novamente.')
+
+# Remove um livro.
+def remover_livro():
+    while True:
+        try:
+            id = int(input('Digite o ID do livro a ser removido: '))
+            for i in lista_livro:
+                if i['id'] == id:
+                    lista_livro.remove(i)
+                    break
+                else:
+                    print('ID inválido.')
+        except ValueError: #Tratamento de erros, caso o usuário insira um valor diferente de número inteiro.
+            print('ID inválido, insira apenas números.')
+
+# Chama a função correspondente a escolha do usuário.
+while True:
+    try:
+        # Cria o menu principal.
+        print('Olá! Seja bem vindo a Livraria do Mario Pereira.')
+        print('-'*46)
+        print('-'*15 + ' MENU PRINCIPAL ' +'-'*15)
+        print(
+            '1 - Cadastrar Livro\n'
+            '2 - Listar Livros\n'
+            '3 - Excluir Livro\n'
+            '4 - Sair'
+            )
+        print('-'*46)
+        opcao = int(input('Escolha uma opção: '))
+
+        if opcao == 1:
+            cadastrar_livro()
+        elif opcao == 2:
+            consultar_livro()
+        elif opcao == 3:
+            remover_livro()
+        elif opcao == 4:
+            break
+        else:
+            print('Opção inválida.')
+    except ValueError:
+        print('Opção inválida.')
